@@ -8,7 +8,7 @@ public class CinemaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CinemaApplication.class, args);
-		System.out.println("oke ne");
+		System.out.println("Loli is da bezt");
 	}
 
 }

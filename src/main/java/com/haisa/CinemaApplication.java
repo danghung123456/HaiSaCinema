@@ -8,21 +8,21 @@ public class CinemaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CinemaApplication.class, args);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		System.out.println("Hưng test");
 		
-=======
+
 
 		System.out.println("push code len branch dev nha mng");
-=======
+
 		System.out.println("Thai ne");
+System.out.println("Tai ne");
+System.out.println(" Quang Thai ne");
 	}
->>>>>>> origin/quocthai
 
-		System.out.println("Tai ne");
 
->>>>>>> danghung
+		
+
 	}
 	
-}
+

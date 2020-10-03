@@ -8,7 +8,7 @@ public class CinemaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CinemaApplication.class, args);
-		System.out.println("tai dep trai");
+		System.out.println("tai dep tra");
 	}
 
 }

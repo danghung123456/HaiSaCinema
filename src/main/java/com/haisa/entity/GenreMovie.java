@@ -14,15 +14,15 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "GenreMovie", schema = "dbo", catalog = "MovieManagement")
-public class GenreMovie implements java.io.Serializable {
+public class GenreMovie   {
 
 	private Integer genreId;
-	private Serializable name;
+	private String name;
 
 	public GenreMovie() {
 	}
 
-	public GenreMovie(Serializable name) {
+	public GenreMovie(String name) {
 		this.name = name;
 	}
 
@@ -43,7 +43,7 @@ public class GenreMovie implements java.io.Serializable {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

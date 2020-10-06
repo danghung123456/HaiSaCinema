@@ -13,7 +13,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Ticket", schema = "dbo", catalog = "MovieManagement")
-public class Ticket implements java.io.Serializable {
+public class Ticket {
 
 	private Integer ticketId;
 	private Integer showTimeId;

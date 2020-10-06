@@ -1,13 +1,11 @@
-package com.haisa;
+package com.haisa.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovieManagementApplication {
-
+public class Application {
 	public static void main(String[] args) {
-		SpringApplication.run(MovieManagementApplication.class, args);
-	}
-
+        SpringApplication.run(Application.class, args);
+}
 }

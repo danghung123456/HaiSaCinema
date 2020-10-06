@@ -2,6 +2,8 @@ package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
 import java.io.Serializable;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,12 +16,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Showtimes", schema = "dbo", catalog = "MovieManagement")
-public class Showtimes implements java.io.Serializable {
+public class Showtimes  {
 
 	private Integer showtimeId;
 	private int movieId;
 	private int roomId;
-	private Serializable date;
+	private Date date;
 	private Integer period;
 	private Integer employeeId;
 	private Integer cinemaId;
@@ -33,7 +35,7 @@ public class Showtimes implements java.io.Serializable {
 		this.roomId = roomId;
 	}
 
-	public Showtimes(int movieId, int roomId, Serializable date, Integer period, Integer employeeId, Integer cinemaId,
+	public Showtimes(int movieId, int roomId, Date date, Integer period, Integer employeeId, Integer cinemaId,
 			Integer status) {
 		this.movieId = movieId;
 		this.roomId = roomId;
@@ -79,7 +81,7 @@ public class Showtimes implements java.io.Serializable {
 		return this.date;
 	}
 
-	public void setDate(Serializable date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 

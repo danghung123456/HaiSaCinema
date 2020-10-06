@@ -14,16 +14,16 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Seat", schema = "dbo", catalog = "MovieManagement")
-public class Seat implements java.io.Serializable {
+public class Seat  {
 
 	private Integer seatId;
-	private Serializable seatName;
+	private String seatName;
 	private Integer roomId;
 
 	public Seat() {
 	}
 
-	public Seat(Serializable seatName, Integer roomId) {
+	public Seat(String seatName, Integer roomId) {
 		this.seatName = seatName;
 		this.roomId = roomId;
 	}
@@ -45,7 +45,7 @@ public class Seat implements java.io.Serializable {
 		return this.seatName;
 	}
 
-	public void setSeatName(Serializable seatName) {
+	public void setSeatName(String seatName) {
 		this.seatName = seatName;
 	}
 

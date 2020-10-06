@@ -14,17 +14,16 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Food", schema = "dbo", catalog = "MovieManagement")
-public class Food implements java.io.Serializable {
-
+public class Food  {
 	private Integer foodId;
-	private Serializable name;
+	private String name;
 	private Double price;
 	private Integer status;
 
 	public Food() {
 	}
 
-	public Food(Serializable name, Double price, Integer status) {
+	public Food(String name, Double price, Integer status) {
 		this.name = name;
 		this.price = price;
 		this.status = status;
@@ -47,7 +46,7 @@ public class Food implements java.io.Serializable {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 

@@ -2,6 +2,8 @@ package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
 import java.io.Serializable;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,16 +16,16 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Employee", schema = "dbo", catalog = "MovieManagement")
-public class Employee implements java.io.Serializable {
+public class Employee {
 
 	private Integer employeeId;
-	private Serializable name;
+	private String name;
 	private String password;
 	private int role;
 	private String email;
 	private Integer phone;
-	private Serializable address;
-	private Serializable birthday;
+	private String address;
+	private Date birthday;
 	private String idCard;
 	private Integer cinemaId;
 	private Integer status;
@@ -31,14 +33,14 @@ public class Employee implements java.io.Serializable {
 	public Employee() {
 	}
 
-	public Employee(Serializable name, String password, int role) {
+	public Employee(String name, String password, int role) {
 		this.name = name;
 		this.password = password;
 		this.role = role;
 	}
 
-	public Employee(Serializable name, String password, int role, String email, Integer phone, Serializable address,
-			Serializable birthday, String idCard, Integer cinemaId, Integer status) {
+	public Employee(String name, String password, int role, String email, Integer phone, String address,
+			Date birthday, String idCard, Integer cinemaId, Integer status) {
 		this.name = name;
 		this.password = password;
 		this.role = role;
@@ -68,7 +70,7 @@ public class Employee implements java.io.Serializable {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -113,7 +115,7 @@ public class Employee implements java.io.Serializable {
 		return this.address;
 	}
 
-	public void setAddress(Serializable address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
@@ -122,7 +124,7 @@ public class Employee implements java.io.Serializable {
 		return this.birthday;
 	}
 
-	public void setBirthday(Serializable birthday) {
+	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
 

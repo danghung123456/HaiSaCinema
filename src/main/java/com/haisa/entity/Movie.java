@@ -1,7 +1,7 @@
 package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
-import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,23 +14,23 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Movie", schema = "dbo", catalog = "MovieManagement")
-public class Movie implements java.io.Serializable {
+public class Movie  {
 
 	private Integer movieId;
-	private Serializable movieName;
+	private String movieName;
 	private Integer duration;
-	private Serializable description;
+	private String description;
 	private String thumbnail;
-	private Serializable actors;
-	private Serializable director;
+	private String actors;
+	private String director;
 	private Integer ageLimit;
 	private Integer status;
 
 	public Movie() {
 	}
 
-	public Movie(Serializable movieName, Integer duration, Serializable description, String thumbnail,
-			Serializable actors, Serializable director, Integer ageLimit, Integer status) {
+	public Movie(String movieName, Integer duration, String description, String thumbnail,
+			String actors, String director, Integer ageLimit, Integer status) {
 		this.movieName = movieName;
 		this.duration = duration;
 		this.description = description;
@@ -43,7 +43,6 @@ public class Movie implements java.io.Serializable {
 
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
-
 	@Column(name = "movieId", unique = true, nullable = false)
 	public Integer getMovieId() {
 		return this.movieId;
@@ -54,11 +53,11 @@ public class Movie implements java.io.Serializable {
 	}
 
 	@Column(name = "movieName")
-	public Serializable getMovieName() {
+	public String getMovieName() {
 		return this.movieName;
 	}
 
-	public void setMovieName(Serializable movieName) {
+	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
 
@@ -72,11 +71,11 @@ public class Movie implements java.io.Serializable {
 	}
 
 	@Column(name = "description")
-	public Serializable getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
-	public void setDescription(Serializable description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -90,20 +89,20 @@ public class Movie implements java.io.Serializable {
 	}
 
 	@Column(name = "actors")
-	public Serializable getActors() {
+	public String getActors() {
 		return this.actors;
 	}
 
-	public void setActors(Serializable actors) {
+	public void setActors(String actors) {
 		this.actors = actors;
 	}
 
 	@Column(name = "director")
-	public Serializable getDirector() {
+	public String getDirector() {
 		return this.director;
 	}
 
-	public void setDirector(Serializable director) {
+	public void setDirector(String director) {
 		this.director = director;
 	}
 
@@ -126,3 +125,4 @@ public class Movie implements java.io.Serializable {
 	}
 
 }
+

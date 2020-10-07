@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: MovieManagement
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: DangHung
+Built-By: ASUS
 Implementation-Vendor-Id: com.haisa
-Build-Jdk: 1.8.0_251
+Build-Jdk: 1.8.0_261
 Implementation-URL: http://projects.spring.io/spring-boot/MovieManagem
  ent/
 Created-By: Maven Integration for Eclipse

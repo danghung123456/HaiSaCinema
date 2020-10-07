@@ -2,12 +2,12 @@ package com.haisa.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import com.haisa.Entity.Member;
 
-import com.haisa.entity.Movie;
 @Repository
-public interface MovieRepository extends JpaRepository<Movie,Integer>{
+public interface MemberRepository extends JpaRepository<Member,Integer>{
 
-	Movie findByMovieId(Integer movieId);
+	Member findByMemberId(Integer memberId);
 	
 	
 		

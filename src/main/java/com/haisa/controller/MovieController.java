@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.haisa.DTO.MovieDTO;
+<<<<<<< HEAD
 import com.haisa.entity.Movie;
 import com.haisa.service.MovieSv;
+=======
+import com.haisa.Entity.Movie;
+>>>>>>> origin/dang
 import com.haisa.service.impl.MovieService;
 
 

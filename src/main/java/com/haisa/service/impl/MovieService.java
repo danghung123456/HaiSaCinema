@@ -2,7 +2,6 @@ package com.haisa.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,13 +43,13 @@ public class MovieService implements MovieSv {
 
 	@Override
 	public List<MovieDTO> findAll() {
-		List<MovieDTO> task = new ArrayList<MovieDTO>();
+		List<MovieDTO> listmovieDTO = new ArrayList<MovieDTO>();
 		List<Movie> entity = movieRepository.findAll();
 		for (Movie item : entity) {
-			MovieDTO tasks = movieConverter.toDTO(item);
-			task.add(tasks);
+			MovieDTO movieDTO = movieConverter.toDTO(item);
+			listmovieDTO.add(movieDTO);
 		}
-		return task;
+		return listmovieDTO;
 	}
 
 	@Override

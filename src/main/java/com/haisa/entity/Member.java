@@ -2,6 +2,8 @@ package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
 import java.io.Serializable;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,23 +16,23 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Member", schema = "dbo", catalog = "MovieManagement")
-public class Member implements java.io.Serializable {
+public class Member {
 
 	private Integer memberId;
-	private Serializable memberName;
+	private String memberName;
 	private String email;
 	private String password;
 	private String phone;
-	private Serializable address;
-	private Serializable birthday;
+	private String address;
+	private Date  birthday;
 	private Integer idCard;
 	private Double totalMoney;
 
 	public Member() {
 	}
 
-	public Member(Serializable memberName, String email, String password, String phone, Serializable address,
-			Serializable birthday, Integer idCard, Double totalMoney) {
+	public Member(String memberName, String email, String password, String phone, String address,
+			Date birthday, Integer idCard, Double totalMoney) {
 		this.memberName = memberName;
 		this.email = email;
 		this.password = password;
@@ -58,7 +60,7 @@ public class Member implements java.io.Serializable {
 		return this.memberName;
 	}
 
-	public void setMemberName(Serializable memberName) {
+	public void setMemberName(String memberName) {
 		this.memberName = memberName;
 	}
 
@@ -94,7 +96,7 @@ public class Member implements java.io.Serializable {
 		return this.address;
 	}
 
-	public void setAddress(Serializable address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 
@@ -103,7 +105,7 @@ public class Member implements java.io.Serializable {
 		return this.birthday;
 	}
 
-	public void setBirthday(Serializable birthday) {
+	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
 

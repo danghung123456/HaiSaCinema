@@ -14,17 +14,17 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Period", schema = "dbo", catalog = "MovieManagement")
-public class Period implements java.io.Serializable {
+public class Period  {
 
 	private Integer periodId;
 	private String startTime;
-	private Serializable dayOfWeek;
+	private String dayOfWeek;
 	private Double price;
 
 	public Period() {
 	}
 
-	public Period(String startTime, Serializable dayOfWeek, Double price) {
+	public Period(String startTime, String dayOfWeek, Double price) {
 		this.startTime = startTime;
 		this.dayOfWeek = dayOfWeek;
 		this.price = price;
@@ -56,7 +56,7 @@ public class Period implements java.io.Serializable {
 		return this.dayOfWeek;
 	}
 
-	public void setDayOfWeek(Serializable dayOfWeek) {
+	public void setDayOfWeek(String dayOfWeek) {
 		this.dayOfWeek = dayOfWeek;
 	}
 

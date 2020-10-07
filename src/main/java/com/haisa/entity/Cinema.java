@@ -14,16 +14,16 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Cinema", schema = "dbo", catalog = "MovieManagement")
-public class Cinema implements java.io.Serializable {
+public class Cinema  {
 
 	private Integer cinemaId;
-	private Serializable name;
-	private Serializable address;
+	private String name;
+	private String address;
 
 	public Cinema() {
 	}
 
-	public Cinema(Serializable name, Serializable address) {
+	public Cinema(String name, String address) {
 		this.name = name;
 		this.address = address;
 	}
@@ -45,7 +45,7 @@ public class Cinema implements java.io.Serializable {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -54,7 +54,7 @@ public class Cinema implements java.io.Serializable {
 		return this.address;
 	}
 
-	public void setAddress(Serializable address) {
+	public void setAddress(String address) {
 		this.address = address;
 	}
 

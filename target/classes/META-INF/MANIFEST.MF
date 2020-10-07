@@ -1,3 +1,11 @@
 Manifest-Version: 1.0
-Class-Path: 
+Implementation-Title: MovieManagement
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: DangHung
+Implementation-Vendor-Id: com.haisa
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/MovieManagem
+ ent/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

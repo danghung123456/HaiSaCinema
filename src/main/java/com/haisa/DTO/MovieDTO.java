@@ -1,12 +1,11 @@
 package com.haisa.DTO;
 
-import java.io.Serializable;
 
 public class MovieDTO {
-
+	
 	private Integer movieId;
 	private String movieName;
-	private Integer duration;
+	private String duration;
 	private String description;
 	private String thumbnail;
 	private String actors;
@@ -19,19 +18,19 @@ public class MovieDTO {
 	public void setMovieId(Integer movieId) {
 		this.movieId = movieId;
 	}
-	public Serializable getMovieName() {
+	public String getMovieName() {
 		return movieName;
 	}
 	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
-	public Integer getDuration() {
+	public String getDuration() {
 		return duration;
 	}
-	public void setDuration(Integer duration) {
+	public void setDuration(String duration) {
 		this.duration = duration;
 	}
-	public Serializable getDescription() {
+	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
@@ -43,13 +42,13 @@ public class MovieDTO {
 	public void setThumbnail(String thumbnail) {
 		this.thumbnail = thumbnail;
 	}
-	public Serializable getActors() {
+	public String getActors() {
 		return actors;
 	}
 	public void setActors(String actors) {
 		this.actors = actors;
 	}
-	public Serializable getDirector() {
+	public String getDirector() {
 		return director;
 	}
 	public void setDirector(String director) {
@@ -67,5 +66,6 @@ public class MovieDTO {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
+	
 
 }

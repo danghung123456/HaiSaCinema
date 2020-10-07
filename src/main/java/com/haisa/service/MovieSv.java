@@ -3,7 +3,7 @@ package com.haisa.service;
 import java.util.List;
 
 import com.haisa.DTO.MovieDTO;
-import com.haisa.entity.Movie;
+import com.haisa.Entity.Movie;
 
 
 public interface MovieSv {

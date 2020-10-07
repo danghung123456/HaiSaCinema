@@ -3,7 +3,7 @@ package com.haisa.converter;
 import org.springframework.stereotype.Component;
 
 import com.haisa.DTO.CinemaDTO;
-import com.haisa.entity.Cinema;
+import com.haisa.Entity.Cinema;
 
 @Component
 public class CinemaConverter {
@@ -12,7 +12,7 @@ public class CinemaConverter {
 		Cinema entity = new Cinema();
 		entity.setCinemaId(dto.getCinemaId());
 		entity.setName(dto.getName());
-		entity.setName(dto.getName());
+		entity.setAddress(dto.getAddress());
 		
 		return entity;
 		
@@ -33,7 +33,7 @@ public class CinemaConverter {
 		
 		entity.setCinemaId(dto.getCinemaId());
 		entity.setName(dto.getName());
-		entity.setName(dto.getName());
+		entity.setAddress(dto.getAddress());
 		
 		return entity;
 		

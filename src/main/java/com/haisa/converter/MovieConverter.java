@@ -3,7 +3,7 @@ package com.haisa.converter;
 import org.springframework.stereotype.Component;
 
 import com.haisa.DTO.MovieDTO;
-import com.haisa.entity.Movie;
+import com.haisa.Entity.Movie;
 
 
 @Component

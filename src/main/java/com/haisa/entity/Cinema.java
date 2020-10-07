@@ -1,4 +1,4 @@
-package com.haisa.entity;
+package com.haisa.Entity;
 
 
 
@@ -42,8 +42,20 @@ public class Cinema  {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	@Override
+	public String toString() {
+		return "Cinema [cinemaId=" + cinemaId + ", name=" + name + ", address=" + address + "]";
+	}
 	
+	public Cinema(String name, String address) {
+		this.name= name;
+		this.address= address;
+		
+	}
 	
+	public Cinema() {
+		
+	}
 	
 
 }

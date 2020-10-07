@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.haisa.DTO.CinemaDTO;
-import com.haisa.entity.Cinema;
+import com.haisa.Entity.Cinema;
 import com.haisa.service.impl.CinemaService;
 
 @RestController

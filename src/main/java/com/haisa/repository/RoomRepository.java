@@ -3,10 +3,10 @@ package com.haisa.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.haisa.Entity.Cinema;
 
+import com.haisa.Entity.Room;
 
 @Repository
-public interface CinemaRepository extends JpaRepository<Cinema, Integer> {
-	Cinema findByCinemaId(Integer cinemaId);
+public interface RoomRepository extends JpaRepository<Room, Integer> {
+	Room findByRoomId(Integer roomId);
 }

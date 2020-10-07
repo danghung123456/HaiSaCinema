@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.haisa.DTO.CinemaDTO;
 
 import com.haisa.converter.CinemaConverter;
-import com.haisa.entity.Cinema;
+import com.haisa.Entity.Cinema;
 
 import com.haisa.repository.CinemaRepository;
 import com.haisa.service.CinemaSv;

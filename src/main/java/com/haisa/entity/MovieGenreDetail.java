@@ -1,4 +1,4 @@
-package com.haisa.entity;
+package com.haisa.Entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

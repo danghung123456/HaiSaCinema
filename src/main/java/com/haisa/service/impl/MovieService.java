@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.haisa.DTO.MovieDTO;
-import com.haisa.entity.Movie;
+import com.haisa.Entity.Movie;
 import com.haisa.converter.MovieConverter;
 import com.haisa.repository.MovieRepository;
 import com.haisa.service.MovieSv;

@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Built-By: tiham
-Build-Jdk: 13.0.2
 Implementation-Title: MovieManagement
 Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: DangHung
 Implementation-Vendor-Id: com.haisa
-Implementation-Vendor: Pivotal Software, Inc.
-Implementation-URL: http://projects.spring.io/spring-boot/MovieManagemen
- t/
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/MovieManagem
+ ent/
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

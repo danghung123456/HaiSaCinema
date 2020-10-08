@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
@@ -47,12 +48,60 @@ public class Movie implements java.io.Serializable {
 	@Column(name = "movieId", unique = true, nullable = false)
 	public Integer getMovieId() {
 		return this.movieId;
+=======
+package com.haisa.Entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="movie")
+public class Movie {
+		
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="movieid")
+    private Integer movieId;
+    
+    @Column(name = "moviename")
+    private String movieName;
+    
+    @Column(name="duration")
+    private String duration;
+    
+    @Column(name="description")
+    private String description;
+    
+    @Column(name="thumbnail")
+    private String thumbnail;
+    
+    @Column(name="actors")
+    private String actors;
+    
+    @Column(name="director")
+    private String director;
+    
+    @Column(name = "agelimit")
+    private Integer ageLimit;
+    
+    @Column(name="status")
+    private Integer status;
+
+    
+	public Integer getMovieId() {
+		return movieId;
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 	}
 
 	public void setMovieId(Integer movieId) {
 		this.movieId = movieId;
 	}
 
+<<<<<<< HEAD
 	@Column(name = "movieName")
 	public Serializable getMovieName() {
 		return this.movieName;
@@ -83,12 +132,41 @@ public class Movie implements java.io.Serializable {
 	@Column(name = "thumbnail")
 	public String getThumbnail() {
 		return this.thumbnail;
+=======
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+
+	public String getDuration() {
+		return duration;
+	}
+
+	public void setDuration(String duration) {
+		this.duration = duration;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getThumbnail() {
+		return thumbnail;
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 	}
 
 	public void setThumbnail(String thumbnail) {
 		this.thumbnail = thumbnail;
 	}
 
+<<<<<<< HEAD
 	@Column(name = "actors")
 	public Serializable getActors() {
 		return this.actors;
@@ -110,19 +188,47 @@ public class Movie implements java.io.Serializable {
 	@Column(name = "ageLimit")
 	public Integer getAgeLimit() {
 		return this.ageLimit;
+=======
+	public String getActors() {
+		return actors;
+	}
+
+	public void setActors(String actors) {
+		this.actors = actors;
+	}
+
+	public String getDirector() {
+		return director;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+	public Integer getAgeLimit() {
+		return ageLimit;
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 	}
 
 	public void setAgeLimit(Integer ageLimit) {
 		this.ageLimit = ageLimit;
 	}
 
+<<<<<<< HEAD
 	@Column(name = "status")
 	public Integer getStatus() {
 		return this.status;
+=======
+	public Integer getStatus() {
+		return status;
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 	}
 
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 }

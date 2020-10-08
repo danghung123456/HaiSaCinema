@@ -1,10 +1,10 @@
-package com.haisa;
+package com.thai;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CinemaApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

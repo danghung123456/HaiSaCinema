@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.haisa.entity;
 // Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 
@@ -57,5 +58,66 @@ public class Cinema implements java.io.Serializable {
 	public void setAddress(Serializable address) {
 		this.address = address;
 	}
+=======
+package com.haisa.Entity;
+
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name = "cinema")
+public class Cinema  {
+
+
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "cinemaid")
+	private Integer cinemaId;
+	@Column(name = "name")
+	private String name;
+	@Column (name = "address")
+	private String address;
+	public Integer getCinemaId() {
+		return cinemaId;
+	}
+	public void setCinemaId(Integer cinemaId) {
+		this.cinemaId = cinemaId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	@Override
+	public String toString() {
+		return "Cinema [cinemaId=" + cinemaId + ", name=" + name + ", address=" + address + "]";
+	}
+	
+	public Cinema(String name, String address) {
+		this.name= name;
+		this.address= address;
+		
+	}
+	
+	public Cinema() {
+		
+	}
+	
+>>>>>>> af595be4425b9aef60319fd77a738c887e8df525
 
 }

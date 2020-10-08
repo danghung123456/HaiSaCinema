@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.haisa.DTO.MemberDTO;
 import com.haisa.DTO.MovieDTO;
-import com.haisa.Entity.Member;
-import com.haisa.Entity.Movie;
+import com.haisa.entity.Member;
+import com.haisa.entity.Movie;
 import com.haisa.service.impl.MemberService;
 import com.haisa.service.impl.MovieService;
 

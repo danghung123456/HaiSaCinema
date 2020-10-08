@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.haisa.DTO.RoomDTO;
 
-import com.haisa.Entity.Room;
+import com.haisa.entity.Room;
 import com.haisa.service.impl.RoomService;
 
 @RestController

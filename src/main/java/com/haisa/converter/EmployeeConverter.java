@@ -3,7 +3,7 @@ package com.haisa.converter;
 import org.springframework.stereotype.Component;
 
 import com.haisa.DTO.EmployeeDTO;
-import com.haisa.Entity.Employee;
+import com.haisa.entity.Employee;
 
 
 @Component

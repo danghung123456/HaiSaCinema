@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.haisa.DTO.EmployeeDTO;
-import com.haisa.Entity.Employee;
+import com.haisa.entity.Employee;
 import com.haisa.service.impl.EmployeeService;
 
 

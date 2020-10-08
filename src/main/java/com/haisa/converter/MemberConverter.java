@@ -2,7 +2,7 @@ package com.haisa.converter;
 
 import org.springframework.stereotype.Component;
 import com.haisa.DTO.MemberDTO;
-import com.haisa.Entity.Member;
+import com.haisa.entity.Member;
 
 
 

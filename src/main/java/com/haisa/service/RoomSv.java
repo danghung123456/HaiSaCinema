@@ -3,7 +3,7 @@ package com.haisa.service;
 import java.util.List;
 
 import com.haisa.DTO.RoomDTO;
-import com.haisa.Entity.Room;
+import com.haisa.entity.Room;
 ;
 
 public interface RoomSv {

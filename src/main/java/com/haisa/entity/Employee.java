@@ -1,4 +1,4 @@
-package com.haisa.Entity;
+package com.haisa.entity;
 
 //Generated Oct 6, 2020, 8:38:42 AM by Hibernate Tools 5.1.10.Final
 

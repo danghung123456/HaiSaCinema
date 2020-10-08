@@ -3,7 +3,7 @@ package com.haisa.service;
 import java.util.List;
 
 import com.haisa.DTO.EmployeeDTO;
-import com.haisa.Entity.Employee;
+import com.haisa.entity.Employee;
 
 
 

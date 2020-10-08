@@ -2,7 +2,7 @@ package com.haisa.service;
 
 import java.util.List;
 import com.haisa.DTO.MemberDTO;
-import com.haisa.Entity.Member;
+import com.haisa.entity.Member;
 
 
 

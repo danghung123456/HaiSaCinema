@@ -5,7 +5,7 @@ import java.util.List;
 
 
 import com.haisa.DTO.CinemaDTO;
-import com.haisa.Entity.Cinema;
+import com.haisa.entity.Cinema;
 
 
 public interface CinemaSv {

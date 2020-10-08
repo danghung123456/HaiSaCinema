@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 import com.haisa.DTO.CinemaDTO;
 import com.haisa.DTO.RoomDTO;
-import com.haisa.Entity.Cinema;
-import com.haisa.Entity.Room;
+import com.haisa.entity.Cinema;
+import com.haisa.entity.Room;
 
 
 
